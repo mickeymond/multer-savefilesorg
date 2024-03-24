@@ -1,6 +1,6 @@
 {
   "name": "multer-savefilesorg-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Forward multipart/form-data file upload into a savefiles.org drive.",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,18 @@
     "axios": "^1.6.8",
     "concat-stream": "^2.0.0",
     "form-data": "^4.0.0"
-  }
+  },
+  "keywords": [
+    "multer",
+    "savefiles",
+    "storage",
+    "engine",
+    "form",
+    "post",
+    "multipart",
+    "form-data",
+    "formdata",
+    "express",
+    "middleware"
+  ]
 }
