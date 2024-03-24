@@ -1,30 +1,32 @@
 # Multer Proxy Storage
 
-This is a custom multer storage engine that proxy the received file into a remote server.
-The proxy is forwarded as multipart/form-data.
+This is a custom multer storage engine that proxy the received file into a savefiles.org drive.
+The data is forwarded as multipart/form-data.
 
 ## Install
 
 ```
-npm install --save multer-proxy-storage
+npm install --save multer-savefilesorg-storage
 ```
 
 ## Usage
 
-In this example we are forwarding user uploaded file into remote server http://www.example.com/upload, with the file
+In this example we are forwarding user uploaded file into savefiles.org drive https://savefiles.org/api/v1/uploads, with the file
 identified with the parameter 'file'.
 
 ``` javascript
 var multer = require('multer')
-var MulterProxyStorage = require('multer-proxy-storage')
+var {MulterSaveFilesOrgStorage} = require('multer-savefilesorg-storage')
 
 this.routePost('/uploadFile',
   (req, res, next) => {
     multer({
-      storage: MulterProxyStorage(
+      storage: MulterSaveFilesOrgStorage(
         {
-          serverPath: `http://www.example.com/upload`,
-          fileParamName: 'file'
+          serverPath: `https://savefiles.org/api/v1/uploads`,
+          apiAccessToken: '<create access token under account settings>',
+          fileParamName: 'file' // If left blank, this defaults to 'file',
+          relativePath: '/' // If left blank, this defaults to root of drive '/',
         }),
       preservePath: true
     }).array('file')(req, res, next)
@@ -34,4 +36,4 @@ this.routePost('/uploadFile',
 ```
 
 ## License
-Multer-Proxy-Storage is released under the [MIT](License) license.
+multer-savefilesorg-storage is released under the [MIT](License) license.

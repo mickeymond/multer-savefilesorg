@@ -1,28 +1,28 @@
 {
-  "name": "multer-proxy-storage",
-  "version": "1.0.2",
-  "description": "Forward multipart/form-data file upload into a specified server.",
+  "name": "multer-savefilesorg-storage",
+  "version": "1.0.0",
+  "description": "Forward multipart/form-data file upload into a savefiles.org drive.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name": "Denny Harijanto",
-    "email": "denny@nusantara-cloud.com",
-    "url": "http://www.nusantara-cloud.com"
+    "name": "Michael Hammond",
+    "email": "mickeymond@gmail.com",
+    "url": "https://mickeymond.xyz"
   },
-  "homepage": "https://github.com/nusantara-cloud/multer-proxy-storage",
+  "homepage": "https://github.com/mickeymond/multer-savefilesorg-storage",
   "repository": {
     "bugs": {
-      "url": "https://github.com/nusantara-cloud/multer-proxy-storage"
+      "url": "https://github.com/mickeymond/multer-savefilesorg-storage/issues"
     },
     "type": "git",
-    "url": "git://github.com/nusantara-cloud/multer-proxy-storage.git"
+    "url": "git://github.com/mickeymond/multer-savefilesorg-storage.git"
   },
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "concat-stream": "^1.6.2",
-    "form-data": "^2.3.2"
+    "axios": "^1.6.8",
+    "concat-stream": "^2.0.0",
+    "form-data": "^4.0.0"
   }
 }
