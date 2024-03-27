@@ -1,8 +1,9 @@
 {
   "name": "multer-savefilesorg-storage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Forward multipart/form-data file upload into a savefiles.org drive.",
   "main": "index.js",
+  "type": "module",
   "exports": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
