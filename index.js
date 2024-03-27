@@ -1,3 +1,2 @@
-var MulterSaveFilesOrgStorage = require('./lib/multer-savefilesorg-storage.js')
-
-module.exports.MulterSaveFilesOrgStorage = MulterSaveFilesOrgStorage
+// Export as named exports
+module.exports.MulterSaveFilesOrgStorage = require('./lib/multer-savefilesorg-storage.js')
