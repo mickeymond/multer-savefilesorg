@@ -16,23 +16,22 @@ identified with the parameter 'file'.
 
 ``` javascript
 var multer = require('multer')
-var {MulterSaveFilesOrgStorage} = require('multer-savefilesorg-storage')
+var {multerSaveFilesOrgStorage} = require('multer-savefilesorg-storage')
 
-this.routePost('/uploadFile',
-  (req, res, next) => {
-    multer({
-      storage: MulterSaveFilesOrgStorage(
-        {
-          serverPath: `https://savefiles.org/api/v1/uploads`,
-          apiAccessToken: '<create access token under account settings>',
-          fileParamName: 'file' // If left blank, this defaults to 'file',
-          relativePath: '/' // If left blank, this defaults to root of drive '/',
-        }),
-      preservePath: true
-    }).array('file')(req, res, next)
-  }, (req, res, next) => {
-    res.send('Success!')
-  })
+// Configure upload middleware
+const upload = multer({
+    storage: multerSaveFilesOrgStorage({
+        apiAccessToken: process.env.SAVEFILESORG_API_KEY,
+        relativePath: '/' // If left blank, this defaults to root of drive '/',
+    }),
+    preservePath: true
+});
+
+// Use upload middleware
+router.post('/', upload.single('image'), (req, res, next) => {
+  console.log(req.file); // If single upload was done
+  console.log(req.files); // If array upload was done
+});
 ```
 
 ## License
