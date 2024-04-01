@@ -1,4 +1,4 @@
-# Multer SaveFilesOrg Storage
+# Multer SaveFilesOrg
 
 This is a custom multer storage engine that proxy the received file into a savefiles.org drive.
 The data is forwarded as multipart/form-data.
