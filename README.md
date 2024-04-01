@@ -16,11 +16,11 @@ identified with the parameter 'file'.
 
 ``` javascript
 var multer = require('multer')
-var {multerSaveFilesOrgStorage} = require('multer-savefilesorg')
+var {multerSaveFilesOrg} = require('multer-savefilesorg')
 
 // Configure upload middleware
 const upload = multer({
-    storage: multerSaveFilesOrgStorage({
+    storage: multerSaveFilesOrg({
         apiAccessToken: process.env.SAVEFILESORG_API_KEY,
         relativePath: '/' // If left blank, this defaults to root of drive '/',
     }),
