@@ -1,1 +1,1 @@
-export { multerSaveFilesOrgStorage } from "./lib/multer-savefilesorg-storage.js"
+export { multerSaveFilesOrgStorage } from "./lib/storage.js"

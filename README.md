@@ -6,7 +6,7 @@ The data is forwarded as multipart/form-data.
 ## Install
 
 ```
-npm install --save multer-savefilesorg-storage
+npm install --save multer-savefilesorg
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ identified with the parameter 'file'.
 
 ``` javascript
 var multer = require('multer')
-var {multerSaveFilesOrgStorage} = require('multer-savefilesorg-storage')
+var {multerSaveFilesOrgStorage} = require('multer-savefilesorg')
 
 // Configure upload middleware
 const upload = multer({
@@ -35,4 +35,4 @@ router.post('/', upload.single('image'), (req, res, next) => {
 ```
 
 ## License
-multer-savefilesorg-storage is released under the [MIT](License) license.
+multer-savefilesorg is released under the [MIT](License) license.

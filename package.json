@@ -1,6 +1,6 @@
 {
-  "name": "multer-savefilesorg-storage",
-  "version": "1.0.7",
+  "name": "multer-savefilesorg",
+  "version": "1.0.0",
   "description": "Forward multipart/form-data file upload into a savefiles.org drive.",
   "main": "index.js",
   "exports": {
@@ -19,13 +19,13 @@
     "email": "mickeymond@gmail.com",
     "url": "https://mickeymond.xyz"
   },
-  "homepage": "https://github.com/mickeymond/multer-savefilesorg-storage",
+  "homepage": "https://github.com/mickeymond/multer-savefilesorg",
   "repository": {
     "bugs": {
-      "url": "https://github.com/mickeymond/multer-savefilesorg-storage/issues"
+      "url": "https://github.com/mickeymond/multer-savefilesorg/issues"
     },
     "type": "git",
-    "url": "git://github.com/mickeymond/multer-savefilesorg-storage.git"
+    "url": "git://github.com/mickeymond/multer-savefilesorg.git"
   },
   "license": "MIT",
   "dependencies": {
